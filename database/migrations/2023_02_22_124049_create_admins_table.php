@@ -14,12 +14,12 @@ return new class extends Migration
         Schema::create('admins', function (Blueprint $table) {
             $table->id('admin_id');
             $table->string('admin_name',30);
+            $table->string('admin_gmail',30);
+            $table->string('admin_pass',30);
             $table->string('admin_Gender',40);
             $table->integer('admin_age');
-            $table->string('country',30);
-            $table->string('city',30);
-            $table->string('town',30);
             $table->text('admin_img');
+            $table->boolean('admin_role');
             $table->timestamps();
         });
     }
@@ -32,3 +32,4 @@ return new class extends Migration
         Schema::dropIfExists('admins');
     }
 };
+?>

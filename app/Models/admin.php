@@ -11,3 +11,4 @@ class admin extends Model
     protected $table = 'admins';
     protected $primaryKey = 'admin_id';
 }
+?>

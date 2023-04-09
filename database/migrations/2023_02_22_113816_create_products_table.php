@@ -18,8 +18,9 @@ return new class extends Migration
             $table->string('p_long_desc',100);
             $table->integer('p_price');
             $table->text('p_img');
-            $table->unsignedBigInteger('b_id');
-            $table->foreign('b_id')->references('brand_id')->on('brands');
+           
+
+           
             $table->timestamps();
         });
     }
